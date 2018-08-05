@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>moving_test</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    {{ 'moving-style-zsm.scss' | asset_url | stylesheet_tag }} 
+    {{ 'jquery.fullpage.min.css' | asset_url | stylesheet_tag }}
+    {{ 'animate.css' | asset_url | stylesheet_tag }}
+</head>
+<body>
+<container id="fullpage">
+<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbweCc4jzi3-p65QZVJXJvgsoB_0x4_8_pqWFeB9AgL9qbow2pU/exec">
+<section id="attraction-content" class="fp-auto-height">
+<div class="title">
+    <div class="grid-container-title">
+        <div id="item-1" class="item1">
+            <span class="icon hh-travel" aria-hidden="true"></span>
+        </div>
+        <div class="item item2 ">
+            <h1>Customized Trip</h1>
+        </div>
+        <div class="item item3">
+            <h1>高端定制</h1>
+        </div>
+    </div>
+</div>
+<div class="gallery gallery01 grid-container-gallery01">
+    <div class="row1 place-1 grid-container-row1">
+        <input class="select-place" type="hidden" id="place-01" value="大洋路">
+        <div class="click-img click-img1">  
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/9939c3dcd2ff5f07f0e0084b093ebefd_530x530_crop_top@2x.png?v=1532571301" alt='This is an image'>
+            <i id="small-icon-1" name="大洋路" class="fas fa-check-circle fa-check-circle-small fa-check-circle-small-1"></i>
+        </div> 
+        <br>
+        <div class="click-name click-name1">
+            <div class="desc desc-1 visited">The Great Ocean Road <br>
+                                     大洋路<br>
+                <div class="line-class line line-first"></div> 
+            </div>
+        </div>
+    </div>
+    <div class="row1 place-2 grid-container-row1">
+        <input class="select-place" type="hidden" id="place-02" value="菲利普小岛">
+        <div class="click-img click-img2">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/cff12a11262168cf0f74b6c556f3553a_530x530_crop_top@2x.png?v=1532571382" alt='This is an image'>
+            <i id="small-icon-2" name="菲利普小岛" class="fas fa-check-circle fa-check-circle-small fa-check-circle-small-1"></i>
+        </div> <br>
+        <div class="click-name click-name2">
+            <div class="desc visited">Phillips Island<br>
+                                菲利普小岛<br>
+                <div class="line-class line line-second"></div> 
+            </div>
+        </div>
+    </div>
+    <div class="row1 place-3 grid-container-row1">
+        <input class="select-place" type="hidden" id="place-03" value="淘金小镇">
+        <div class="click-img click-img3">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/189ed12833a01678c8ec4d0c6aa373d7_bfada9ac-d426-4374-8a89-33379c7ce8f8_530x530_crop_top@2x.png?v=1532582635" alt='This is an image'>
+            <i id="small-icon-3" name="淘金小镇" class="fas fa-check-circle fa-check-circle-small fa-check-circle-small-1"></i>
+        </div> <br>
+        <div class="click-name click-name3">
+            <div class="desc visited">Sovereign Hill<br>
+                                淘金小镇<br>
+                <div class="line-class line line-third"></div> 
+            </div>
+        </div>
+    </div>
+</div>
+<div id="demo-1" class="collapse">
+    <p class="title-info">大洋路<br>
+                The Great Ocean Road
+    </p>
+    <div class="line-info"></div> <br>
+    <p class="text-info">
+    一日游：十二里面最多选五个 路程单程4.5h, 往返9h，午饭1h，游玩2.5h。<br>
+    两日游：可全部选择，时间充足。（选6-12个）
+    </p>
+    <input id="one-day-1" class="button-info-1" name="套餐类型" type="button" value="一日游"/>
+    <input id="two-day-1" class="button-info-2" type="button" value="两日游"/>
+    <br>
+    <br>
+    <div class="main-info grid-container-collapse01">
+        <div id="image-1" class="image-info">
+            <input type="hidden" id="place-01-1" value="奥特威海角灯塔">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/62237a009613de716a87f639cbb3e508_530x530_crop_top@2x.png?v=1532917580" alt='This is an image'>
+            <i id="check-1" name="奥特威海角灯塔" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-2" class="image-info">
+            <input type="hidden" id="place-01-2" value="Geelong 木头人 & 迷你摩天轮">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/Geelong_f76772e3-bf3c-4c12-af75-bda372d6f3b7_530x530_crop_top@2x.png?v=1532918836" alt='This is an image'>
+            <i id="check-2" name="Geelong 木头人 & 迷你摩天轮" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-3" class="image-info">
+            <input type="hidden" id="place-01-3" value="Apollo小镇">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/Apollo_530x530_crop_top@2x.png?v=1532918845" alt='This is an image'>
+            <i id="check-3" name="Apollo小镇" class="far fa-check-circle fa-check-circle-large"></i>
+        </div> 
+        <div id="image-4" class="image-info">
+            <input type="hidden" id="place-01-4" value="伦敦桥">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/2da17a24c89cf111aa253bab347b168b_530x530_crop_top@2x.png?v=1532918868" alt='This is an image'>
+            <i id="check-4" name="伦敦桥" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-5" class="image-info">
+            <input type="hidden" id="place-01-5" value="十二门徒">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/c8af1d8568d87ae83164f7b063ea191a_530x530_crop_top@2x.png?v=1532924399" alt='This is an image'>
+            <i id="check-5" name="十二门徒" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-6" class="image-info">
+            <input type="hidden" id="place-01-6" value="大洋路牌坊">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/7ddb229ca503d6bd1be954b0a5d2c2d7_530x530_crop_top@2x.png?v=1532924411" alt='This is an image'>
+            <i id="check-6" name="大洋路牌坊" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-7" class="image-info">
+            <input type="hidden" id="place-01-7" value="吉布森石阶">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/f5bc2c89e823bbcd97c9b260a78f50b8_530x530_crop_top@2x.png?v=1532924418" alt='This is an image'>
+            <i id="check-7" name="吉布森石阶" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-8" class="image-info">
+            <input type="hidden" id="place-01-8" value="岩穴">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/74857c454dd6593de991b532bf9b4e0b_530x530_crop_top@2x.png?v=1532924571" alt='This is an image'>
+            <i id="check-8" name="岩穴" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-9" class="image-info">
+            <input type="hidden" id="place-01-9" value="拱门">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/eb35844c1e840ed41dde3d1cddee5464_530x530_crop_top@2x.png?v=1532924581" alt='This is an image'>
+            <i id="check-9" name="拱门" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-10" class="image-info">
+            <input type="hidden" id="place-01-10" value="群岛湾">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/ccd4c164059d687357c80d0af39645b8_530x530_crop_top@2x.png?v=1532924823" alt='This is an image'>
+            <i id="check-10" name="群岛湾" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-11" class="image-info">
+            <input type="hidden" id="place-01-11" value="洛克阿德峡谷">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/f2208a05a18d7084f5b07b82260f0a40_530x530_crop_top@2x.png?v=1532924585" alt='This is an image'>
+            <i id="check-11" name="洛克阿德峡谷" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-12" class="image-info">
+            <input type="hidden" id="place-01-12" value="鹰岩">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/b4045889946a9fa7fe2c97c3c1f0afeb_530x530_crop_top@2x.png?v=1532924827" alt='This is an image'>
+            <i id="check-12" name="鹰岩" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+    </div>
+</div>
+<div id="demo-2" class="collapse">
+    <p class="title-info">菲利普岛<br>
+                        Phillip Island
+    </p>
+    <div class="line-info"></div> <br>
+    <p class="text-info">
+    City出发，路程往返4h，小镇午饭1.5小时，游玩5.5到7h，共11到12.5h。
+    </p>
+    <div class="main-info grid-container-collapse02">
+        <div id="image-21" class="image-info">
+            <input type="hidden" id="place-02-1" value="Cowes小镇">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/Cowes_530x530_crop_top@2x.png?v=1532925116" alt='This is an image'>
+            <i id="check-21" name="Cowes小镇" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-22" class="image-info">
+            <input type="hidden" id="place-02-2" value="企鹅归巢">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/afe7251348a004c4a709786aa25a3279_530x530_crop_top@2x.png?v=1532925123" alt='This is an image'>
+            <i id="check-22" name="企鹅归巢" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-23" class="image-info">
+            <input type="hidden" id="place-02-3" value="农场">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/1c2353499ed6e260707cbdfe52a7abbd_530x530_crop_top@2x.png?v=1532925129" alt='This is an image'>
+            <i id="check-23" name="农场" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-24" class="image-info">
+            <input type="hidden" id="place-02-4" value="野生动物园">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/44c79922436bd2bc2c7a1e615780b19b_530x530_crop_top@2x.png?v=1532925138" alt='This is an image'>
+            <i id="check-24" name="野生动物园" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-25" class="image-info">
+            <input type="hidden" id="place-02-5" value="巧克力工厂">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/a7022c83f902d3088b0b51de64f7ff0b_530x530_crop_top@2x.png?v=1532925138" alt='This is an image'>
+            <i id="check-25" name="巧克力工厂" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+    </div>
+</div>
+<div id="demo-3" class="collapse">
+    <p class="title-info">淘金小镇<br>
+                        Sovereign Hill
+    </p>
+    <div class="line-info"></div> <br>
+    <p class="text-info">
+        City出发，路程往返3h，午饭1h，游玩5h，共9h。早上九点出发，晚上六点回客人家。
+    </p>
+    <div class="main-info grid-container-collapse03">
+        <div id="image-31" class="image-info">
+            <input type="hidden" id="place-03-1" value="古堡">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/131a8484b2421829a13c5dd4aa601814_530x530_crop_top@2x.png?v=1532925605" alt='This is an image'>
+            <i id="check-31" name="古堡" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-32" class="image-info">
+            <input type="hidden" id="place-03-2" value="艺术展览馆">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/d43bfb1d7ec75123cf5e4ff59607bdf2_e0c73d61-5294-4531-bd00-ec7c557dcd3c_530x530_crop_top@2x.png?v=1533203199" alt='This is an image'>
+            <i id="check-32" name="艺术展览馆" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-33" class="image-info">
+            <input type="hidden" id="place-03-3" value="羊毛制品厂">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/18a90f848ccb0d92e62754638d01bcf6_2efda85a-af68-45ad-8d35-99622f326102_530x530_crop_top@2x.png?v=1533203192" alt='This is an image'>
+            <i id="check-33" name="羊毛制品厂" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-34" class="image-info">
+            <input type="hidden" id="place-03-4" value="金矿山">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/74afbdee45ea250d711614f8116f6c0d_530x530_crop_top@2x.png?v=1532925624" alt='This is an image'>
+            <i id="check-34" name="金矿山" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-35" class="image-info">
+            <input type="hidden" id="place-03-5" value="黄金博物馆">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/dc95ffc0e005f15cacbc41ea9c64b4fc_530x530_crop_top@2x.png?v=1532925629" alt='This is an image'>
+            <i id="check-35" name="黄金博物馆" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+    </div>
+</div>
+<div class="gallery gallery02 grid-container-gallery02">
+    <div class="row2 place-4 grid-container-row2">
+        <input class="select-place" type="hidden" id="place-04" value="蒸汽小火车">
+        <div id = "click-img4" class="click-img click">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/1566c893f7c30afecf2f3feb4f3999fc_530x530_crop_top@2x.png?v=1532571370" alt='This is an image'>
+            <i id="small-icon-4" name="蒸汽小火车" class="fas fa-check-circle fa-check-circle-small fa-check-circle-small-2"></i>
+        </div> <br>
+        <div class="click-text click-name4">
+            <div class="desc visited">Puffing Billy<br>
+                                蒸汽小火车<br>
+                <div class="line-class line1 line-forth"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row2 place-5 grid-container-row2">
+        <input class="select-place" type="hidden" id="place-05" value="莫宁顿半岛">
+        <div id="click-img5" class="click-img click">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/93b9fd766c79813fd4186188cf38d28d_530x530_crop_top@2x.png?v=1532571384" alt='This is an image'>
+            <i id="small-icon-5" name="莫宁顿半岛" class="fas fa-check-circle fa-check-circle-small fa-check-circle-small-2"></i>
+        </div> <br>
+        <div class="click-text click-name5">
+            <div class="desc visited">Mornington<br>
+                                莫宁顿半岛<br>
+                <div class="line-class line1 line-fifth"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="demo-4" class="collapse">
+    <p class="title-info">蒸汽小火车<br>
+                        Puffing Billy
+    </p>
+    <div class="line-info"></div> <br>
+    <p class="text-info">
+        City出发，路程往返3h， 午饭1h，游玩5-6 h，共9-10 h。
+    </p>
+    <div class="main-info grid-container-collapse04">
+        <div id="image-41" class="image-info">
+            <input type="hidden" id="place-04-1" value="丛林小火车">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/0c91efbc5c4d5e63732e09401b7e964f_530x530_crop_top@2x.png?v=1532926146" alt='This is an image'>
+            <i id="check-41" name="丛林小火车" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-42" class="image-info">
+            <input type="hidden" id="place-04-2" value="小迷宫">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/d0cd9bd3c9b749e667fd45cfa06a41bd_530x530_crop_top@2x.png?v=1532926153" alt='This is an image'>
+            <i id="check-42" name="小迷宫" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-43" class="image-info">
+            <input type="hidden" id="place-04-3" value="薰衣草庄园">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/570e0e56dd53cf30fa058e0421febd9e_530x530_crop_top@2x.png?v=1532926159" alt='This is an image'>
+            <i id="check-43" name="薰衣草庄园" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-44" class="image-info">
+            <input type="hidden" id="place-04-4" value="雅拉德酒庄">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/094dada5f0ff26289925471190d9aa33_530x530_crop_top@2x.png?v=1532926162" alt='This is an image'>
+            <i id="check-44" name="雅拉德酒庄" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+    </div>
+</div>
+<div id="demo-5" class="collapse">
+    <p class="title-info">莫宁顿半岛<br> 
+                        Mornington
+    </p>
+    <div class="line-info"></div> <br>
+    <p class="text-info">
+        City出发，路程往返3小时，午饭1.5h，游玩4.5-6h，共9 - 10.5h。
+    </p>
+    <div class="main-info grid-container-collapse05">
+        <div id="image-51" class="image-info">
+            <input type="hidden" id="place-05-1" value="半岛温泉">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/322da40713574d53b6c54ddac2dad68b_530x530_crop_top@2x.png?v=1532926441" alt='This is an image'>
+            <i id="check-51" name="半岛温泉" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-52" class="image-info">
+            <input type="hidden" id="place-05-2" value="彩虹小屋">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/a985521ce2c898dee8b52e412ee01c05_530x530_crop_top@2x.png?v=1532926450" alt='This is an image'>
+            <i id="check-52" name="彩虹小屋" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+        <div id="image-53" class="image-info">
+            <input type="hidden" id="place-05-3" value="小镇观光">
+            <img src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/ff456ce989af18f4df886dd6de73cf94_530x530_crop_top@2x.png?v=1532926451" alt='This is an image'>
+            <i id="check-53" name="小镇观光" class="far fa-check-circle fa-check-circle-large"></i>
+        </div>
+    </div>
+</div>
+</section>
+<section class="hero5">
+    {% include 'contact-moving-zsm' %}
+</section>
+</form>
+ </container>
+ <div class="hero6" style="display:none" id="thankyou_message">
+            <img class="thankyou_image" src="https://cdn.shopify.com/s/files/1/0070/3401/1705/files/melbsj_530x530_crop_top@2x.png?v=1525996673"></img>
+            <h2 class="thanku">Thank You</h2>
+            <br>
+            <div class="thankyou_message">
+                <h4>您的预定我们已经收到，稍后会发送订单确认邮件.</h4>
+            </div>
+</div>
+<script>
+        $(document).ready(function(){
+            var index_small_place = 0;
+            $(".place-1").hover(function() {
+                var index = [1,2,3,4]
+                for (var i=0;i<index.length;i++) {
+                    $(".line-class").eq(index[i]).hide();
+                }
+                $(".line-first").show();
+            }, function() {
+                $(".line-first").hide();
+            });
+            $(".place-1").click(function() {
+                var places = document.getElementsByClassName("select-place");
+                var index = [1,2,3,4]
+                for (var i=0;i<index.length;i++) {
+                    $(".collapse").eq(index[i]).hide();
+                    $(".line-class").eq(index[i]).hide();
+                    $(".fa-check-circle-small").eq(index[i]).hide();
+                    if(places[index[i]].hasAttribute("name")==true) {
+                       places[index[i]].removeAttribute("name") ;
+                    }
+                }
+                $("#one-day-1").css("background-color", "rgb(0, 255, 255)");
+                $("#one-day-1").css("color", "black");
+                $("#two-day-1").css("background-color", "transparent");
+                $("#two-day-1").css("color", "white");
+                var bt1 = document.getElementById("one-day-1");
+                var bt2 = document.getElementById("two-day-1");
+                if (bt1.hasAttribute("name")==false) {
+                    bt1.setAttribute("name", "套餐类型-1");
+                }
+                if (bt2.hasAttribute("name")==true) {
+                    bt2.removeAttribute("name");
+                }
+                $(".image-info").each(function() {
+                    $(this).children("i").hide();
+                    this.style.backgroundColor = "transparent";
+                    this.style.boxShadow = "none";
+                    if(this.children[0].hasAttribute("name")==true) {
+                        this.children[0].removeAttribute("name");
+                    }
+                    index_small_place = 0;
+                });
+                var collap = document.getElementById("demo-1");
+                var place_01 = document.getElementById("place-01");
+                if (collap.style.display == "none") {
+                    $(".line-first").show();
+                } else if(collap.style.display == "block") {
+                    $(".line-first").hide();
+                }
+                $("#small-icon-1").fadeToggle("fast");
+                $("#demo-1").fadeToggle("fast");
+                place_01.setAttribute("name", "大景点");      
+            });
+            $(".place-2").hover(function() {
+                var index = [0,2,3,4]
+                for (var i=0;i<index.length;i++) {
+                    $(".line-class").eq(index[i]).hide();
+                }
+                $(".line-second").show();
+            }, function() {
+                $(".line-second").hide();
+            });
+            $(".place-2").click(function() {
+                var places = document.getElementsByClassName("select-place");
+                var index = [0,2,3,4]
+                for (var i=0;i<index.length;i++) {
+                    $(".collapse").eq(index[i]).hide();
+                    $(".line-class").eq(index[i]).hide();
+                    $(".fa-check-circle-small").eq(index[i]).hide();
+                    if(places[index[i]].hasAttribute("name")==true) {
+                       places[index[i]].removeAttribute("name") ;
+                    }
+                }
+                var bt1 = document.getElementById("one-day-1");
+                var bt2 = document.getElementById("two-day-1");
+                if (bt1.hasAttribute("name")==true) {
+                    bt1.removeAttribute("name") ;
+                } else if (bt2.hasAttribute("name")==true) {
+                    bt2.removeAttribute("name") ;
+                }
+                $(".image-info").each(function() {
+                    $(this).children("i").hide();
+                    this.style.backgroundColor = "transparent";
+                    this.style.boxShadow = "none";
+                    if(this.children[0].hasAttribute("name")==true) {
+                        this.children[0].removeAttribute("name");
+                    }
+                    index_small_place = 0;
+                });
+                var collap = document.getElementById("demo-2");
+                var place_02 = document.getElementById("place-02");
+                if (collap.style.display == "none") {
+                    $(".line-second").show();
+                } else if(collap.style.display == "block") {
+                    $(".line-second").hide();
+                }
+                $("#small-icon-2").fadeToggle("fast");
+                $("#demo-2").fadeToggle("fast");
+                place_02.setAttribute("name", "大景点");  
+            });
+            $(".place-3").hover(function() {
+                var index = [0,1,3,4]
+                for (var i=0;i<index.length;i++) {
+                    $(".line-class").eq(index[i]).hide();
+                }
+                $(".line-third").show();
+            }, function() {
+                $(".line-third").hide();
+            });
+            $(".place-3").click(function() {
+                var places = document.getElementsByClassName("select-place");
+                var index = [0,1,3,4]
+                for (var i=0;i<index.length;i++) {
+                    $(".collapse").eq(index[i]).hide();
+                    $(".line-class").eq(index[i]).hide();
+                    $(".fa-check-circle-small").eq(index[i]).hide();
+                    if(places[index[i]].hasAttribute("name")==true) {
+                       places[index[i]].removeAttribute("name") ;
+                    }
+                }
+                var bt1 = document.getElementById("one-day-1");
+                var bt2 = document.getElementById("two-day-1");
+                if (bt1.hasAttribute("name")==true) {
+                    bt1.removeAttribute("name") ;
+                } else if (bt2.hasAttribute("name")==true) {
+                    bt2.removeAttribute("name") ;
+                }
+                $(".image-info").each(function() {
+                    $(this).children("i").hide();
+                    this.style.backgroundColor = "transparent";
+                    this.style.boxShadow = "none";
+                    if(this.children[0].hasAttribute("name")==true) {
+                        this.children[0].removeAttribute("name");
+                    }
+                    index_small_place = 0;
+                });
+                var collap = document.getElementById("demo-3");
+                var place_03 = document.getElementById("place-03");
+                if (collap.style.display == "none") {
+                    $(".line-third").show();
+                } else if(collap.style.display == "block") {
+                    $(".line-third").hide();
+                }
+                $("#small-icon-3").fadeToggle("fast");
+                $("#demo-3").fadeToggle("fast");
+                place_03.setAttribute("name", "大景点");
+            });
+            $(".place-4").hover(function() {
+                var index = [0,1,2,4]
+                for (var i=0;i<index.length;i++) {
+                    $(".line-class").eq(index[i]).hide();
+                }
+                $(".line-forth").show();
+            }, function() {
+                $(".line-forth").hide();
+            });
+            $(".place-4").click(function() {
+                var places = document.getElementsByClassName("select-place");
+                var index = [0,1,2,4]
+                for (var i=0;i<index.length;i++) {
+                    $(".collapse").eq(index[i]).hide();
+                    $(".line-class").eq(index[i]).hide();
+                    $(".fa-check-circle-small").eq(index[i]).hide();
+                    if(places[index[i]].hasAttribute("name")==true) {
+                       places[index[i]].removeAttribute("name") ;
+                    }
+                }
+                var bt1 = document.getElementById("one-day-1");
+                var bt2 = document.getElementById("two-day-1");
+                if (bt1.hasAttribute("name")==true) {
+                    bt1.removeAttribute("name") ;
+                } else if (bt2.hasAttribute("name")==true) {
+                    bt2.removeAttribute("name") ;
+                }
+                $(".image-info").each(function() {
+                    $(this).children("i").hide();
+                    this.style.backgroundColor = "transparent";
+                    this.style.boxShadow = "none";
+                    if(this.children[0].hasAttribute("name")==true) {
+                        this.children[0].removeAttribute("name");
+                    }
+                    index_small_place = 0;
+                });
+                var collap = document.getElementById("demo-4");
+                var place_04 = document.getElementById("place-04");
+                if (collap.style.display == "none") {
+                    $(".line-forth").show();
+                } else if(collap.style.display == "block") {
+                    $(".line-forth").hide();
+                }
+                $("#small-icon-4").fadeToggle("fast");
+                $("#demo-4").fadeToggle("fast");
+                place_04.setAttribute("name", "大景点");
+            });
+             $(".place-5").hover(function() {
+                var index = [0,1,2,3]
+                for (var i=0;i<index.length;i++) {
+                    $(".line-class").eq(index[i]).hide();
+                }
+                $(".line-fifth").show();
+            }, function() {
+                $(".line-fifth").hide();
+            });
+            $(".place-5").click(function() {
+                var places = document.getElementsByClassName("select-place");
+                var index = [0,1,2,3]
+                for (var i=0;i<index.length;i++) {
+                    $(".collapse").eq(index[i]).hide();
+                    $(".line-class").eq(index[i]).hide();
+                    $(".fa-check-circle-small").eq(index[i]).hide();
+                    if(places[index[i]].hasAttribute("name")==true) {
+                       places[index[i]].removeAttribute("name");
+                    }
+                }
+                var bt1 = document.getElementById("one-day-1");
+                var bt2 = document.getElementById("two-day-1");
+                if (bt1.hasAttribute("name")==true) {
+                    bt1.removeAttribute("name") ;
+                } else if (bt2.hasAttribute("name")==true) {
+                    bt2.removeAttribute("name") ;
+                }
+                $(".image-info").each(function() {
+                    $(this).children("i").hide();
+                    this.style.backgroundColor = "transparent";
+                    this.style.boxShadow = "none";
+                    if(this.children[0].hasAttribute("name")==true) {
+                        this.children[0].removeAttribute("name");
+                    }
+                    index_small_place = 0;
+                });
+                var collap = document.getElementById("demo-5");
+                var place_05 = document.getElementById("place-05");
+                if (collap.style.display == "none") {
+                    $(".line-fifth").show();
+                } else if(collap.style.display == "block") {
+                    $(".line-fifth").hide();
+                }
+                $("#small-icon-5").fadeToggle("fast");
+                $("#demo-5").fadeToggle("fast");
+                place_05.setAttribute("name", "大景点");
+
+            });
+            $(".image-info").each(function(index) {
+                $(this).click(function() {
+                    if (this.style.backgroundColor == "rgb(42, 83, 131)") {
+                        this.style.backgroundColor = "transparent";
+                        this.style.boxShadow = "none";
+                        if(this.children[0].hasAttribute("name")==true) {
+                            this.children[0].removeAttribute("name");
+                        }
+                        $(this).children("i").hide();
+                        index_small_place = index_small_place-1;
+                    } else {
+                        if (index>=0 && index<=11) {
+                            var bt1 = document.getElementById("one-day-1");
+                            var bt2 = document.getElementById("two-day-1");
+                            console.log("name",bt1.hasAttribute("name")==true);
+                            console.log("index",index_small_place<5);
+                            if (bt1.hasAttribute("name")==true && index_small_place<5) {
+                                index_small_place = index_small_place+1;
+                                this.style.backgroundColor = "rgb(42, 83, 131)";
+                                this.style.boxShadow = "0 12px 20px rgba(0, 0, 0, 0.6)";
+                                $(this).children("i").show();
+                                this.children[0].setAttribute("name","小景点"+ index_small_place);
+                            } else if(bt2.hasAttribute("name")==true){
+                                this.style.backgroundColor = "rgb(42, 83, 131)";
+                                this.style.boxShadow = "0 12px 20px rgba(0, 0, 0, 0.6)";
+                                $(this).children("i").show();
+                                this.children[0].setAttribute("name","小景点"+ (++index_small_place));
+                            }
+                        } else {
+                            console.log("index_small_place",index_small_place);
+                            this.style.backgroundColor = "rgb(42, 83, 131)";
+                            this.style.boxShadow = "0 12px 20px rgba(0, 0, 0, 0.6)";
+                            $(this).children("i").show();
+                            this.children[0].setAttribute("name","小景点"+ (++index_small_place));
+                        }
+                        
+                    }
+                });
+            });
+            $("#one-day-1").click(function() {
+                $(this).css("background-color", "rgb(0, 255, 255)");
+                $(this).css("color", "black");
+                $("#two-day-1").css("background-color", "transparent");
+                $("#two-day-1").css("color", "white");
+                var bt1 = document.getElementById("one-day-1");
+                var bt2 = document.getElementById("two-day-1");
+                if(bt2.hasAttribute("name")==true) {
+                       bt2.removeAttribute("name") ;
+                    }
+                bt1.setAttribute("name", "套餐类型-1");
+                $(".image-info").each(function() {
+                    $(this).children("i").hide();
+                    this.style.backgroundColor = "transparent";
+                    this.style.boxShadow = "none";
+                    if(this.children[0].hasAttribute("name")==true) {
+                        this.children[0].removeAttribute("name");
+                    }
+                    index_small_place = 0;
+                });
+            });
+            $("#two-day-1").click(function() {
+                $(this).css("background-color", "rgb(0, 255, 255)");
+                $(this).css("color", "black");
+                $("#one-day-1").css("background-color", "transparent");
+                $("#one-day-1").css("color", "white");
+                var bt1 = document.getElementById("one-day-1");
+                var bt2 = document.getElementById("two-day-1");
+                if(bt1.hasAttribute("name")==true) {
+                       bt1.removeAttribute("name") ;
+                    }
+                bt2.setAttribute("name", "套餐类型-2");
+                $(".image-info").each(function() {
+                    $(this).children("i").hide();
+                    this.style.backgroundColor = "transparent";
+                    this.style.boxShadow = "none";
+                    if(this.children[0].hasAttribute("name")==true) {
+                        this.children[0].removeAttribute("name");
+                    }
+                    index_small_place = 0;
+                });
+            });
+
+        });
+</script>
+<script>
+        $(document).ready(function () {
+            //activate wow.js
+            new WOW().init();
+            var totalSlides = $('section').length;
+            $('.ui-timepicker-container').addClass("scrollable-element");
+            $('.link-to-term').click(function(){
+                $("#term-container").fadeIn("slow");
+            });
+            //activate fullpage.js
+            $('#fullpage').fullpage({
+                verticalCentered: true,
+                scrollBar: true,
+                fitToSection: false,
+                navigation: true,
+                autoScrolling:false,
+                showActiveTooltip: true,
+                scrollingSpeed: 1000,
+                css3: true,
+                normalScrollElements: '.scrollable-element',
+                responsiveWidth: 800,
+                navigationTooltips: ['attractions', 'contact'],
+                sectionSelector: 'section',
+            });
+
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    {{ 'scrolloverflow.min.js' | asset_url | script_tag }} 
+    {{ 'jquery.fullpage.min.js'| asset_url | script_tag }} 
+    {{ 'jquery.easings.min.js' | asset_url | script_tag }} 
+    {{ 'form-submission-handler.js' | asset_url | script_tag }}
+</body>
+</html>
